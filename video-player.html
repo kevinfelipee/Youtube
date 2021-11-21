@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube</title>
+    
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/responsivel.css">
+</head>
+<body>
+    <!----------------HEADER---------------->
+    <header>
+        <nav class="navegacao flex-div">
+            <div class="nav-left flex-div">
+                <img src="icons/menu.svg" class="menu-nav">
+                <a href="index.html"><img src="icons/youtube-logo.svg" class="youtube-logo"></a>
+            </div>
+
+            <div class="nav-middle flex-div">
+                <form class="box-search flex-div">
+                    <input type="text" placeholder="Search" class="search-bar">
+                    <img src="icons/search.svg" class="search-icon">
+                </form>
+                <img src="images/voice-search.png" class="mic-img">
+            </div>
+
+            <div class="nav-right flex-div">
+                <img src="icons/video-call.svg">
+                <img src="icons/apps.svg">
+                <img src="icons/search.svg" class="search-small">
+                <span notifications="9+" class="flex-div">
+                    <img src="icons/notifications.svg" class="notif">
+                </span>
+                <img src="images/Jack.png" class="icon-nav">
+            </div>
+        </nav>
+    </header>
+    <!----------------MAIN---------------->
+    <main class="container-player">
+        <div class="player-video">
+            <video controls autoplay class="video">
+                <source src="images/video.mp4" type="video/mp4">
+            </video>
+            
+            <h2 class="titulo-video">Título do Vídeo</h2>
+            
+            <div class="info-video">
+                <span>1,282,758 views &bull; Apr 17, 2020</span>
+                <div class="option-video">
+                    <span><img src="images/gostar.png">44K</span>
+                    <span><img src="images/nao-gosta.png">1k</span>
+                    <span><img src="images/compartilhar.png">SHARE</span>
+                    <span><svg viewBox="0 0 24 24" class="save" preserveAspectRatio="xMidYMid meet" focusable="false" style="pointer-events: none; display: block; width: 18px; height: 18px;"><g><path d="M22,13h-4v4h-2v-4h-4v-2h4V7h2v4h4V13z M14,7H2v1h12V7z M2,12h8v-1H2V12z M2,16h8v-1H2V16z"></path></g></svg>SAVE</span>
+                    <span class="pontos-icon"><img src="images/pontos.png"></span>
+                </div>
+            </div>
+
+            <div class="channel-and-sub">
+                <div class="channel-info">
+                    <img src="images/Jack.png" class="icon-description-channel">
+                    <div class="channel">
+                        <a href="#">Kevin</a>
+                        <span>250k subscribers</span>
+                    </div>
+                </div>
+                <input type="button" value="SUBSCRIBE" class="btn-subscribe">
+            </div>
+
+            <div class="description">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore quis excepturi rem earum quidem? Veniam, voluptates. Tenetur qui aspernatur eaque. Quisquam id culpa facilis quaerat sequi, et repellendus voluptatibus nulla!</p>
+
+                <div class="showmore">Show more</div>
+            </div>
+            <hr class="border-description">
+
+            <div class="top-comment">
+                <h3 class="title-comment">540 Comments</h3>
+                <span><img src="images/menu.png" class="menu-comment">SORT BY</span>
+            </div>
+
+            <div class="write-comment">
+                <img src="images/Jack.png" class="icon-comment-write">
+                <div class="write-submit">
+                    <input type="text" placeholder="Add a public comment..." class="input-write">
+                </div>
+            </div>
+
+            <div class="comments">
+                <div class="comment">
+                    <img src="images/Jack.png" class="icon-comment-write">
+                    <div class="info-comment">
+                        <div class="name-comment">
+                            <a href="#">Kevin</a>
+                            <span>10 hours ago</span>
+                        </div>
+                        <div class="text-comment">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam voluptatibus nisi perspiciatis nihil magni, quam tempora rerum, nobis delectus similique animi accusamus? Animi aliquam tempora voluptatibus optio eum necessitatibus accusantium.</p>
+                        </div>
+                        <div class="like-comment">
+                            <span><img src="images/gostar.png">120</span>
+                            <span><img src="images/nao-gosta.png"></span>
+                            <span class="reply">Reply</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="comment">
+                    <img src="images/cameron.png" class="icon-comment-write">
+                    <div class="info-comment">
+                        <div class="name-comment">
+                            <a href="#">Cameron</a>
+                            <span>1 hour ago</span>
+                        </div>
+                        <div class="text-comment">
+                            <p>nobis delectus similique animi accusamus? Animi aliquam tempora voluptatibus optio eum necessitatibus accusantium.</p>
+                        </div>
+                        <div class="like-comment">
+                            <span><img src="images/gostar.png">50</span>
+                            <span><img src="images/nao-gosta.png"></span>
+                            <span class="reply">Reply</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="comment">
+                    <img src="images/gerard.png" class="icon-comment-write">
+                    <div class="info-comment">
+                        <div class="name-comment">
+                            <a href="#">Gerard</a>
+                            <span>10 hours ago</span>
+                        </div>
+                        <div class="text-comment">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam voluptatibus nisi perspiciatis nihil magni, quam tempora rerum, nobis delectus similique animi accusamus? Animi aliquam tempora voluptatibus optio eum necessitatibus accusantium.</p>
+                        </div>
+                        <div class="like-comment">
+                            <span><img src="images/gostar.png">20</span>
+                            <span><img src="images/nao-gosta.png"></span>
+                            <span class="reply">Reply</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="comment">
+                    <img src="images/megan.png" class="icon-comment-write">
+                    <div class="info-comment">
+                        <div class="name-comment">
+                            <a href="#">Megan</a>
+                            <span>15 hours ago</span>
+                        </div>
+                        <div class="text-comment">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam voluptatibus nisi perspiciatis nihil magni, quam tempora rerum.</p>
+                        </div>
+                        <div class="like-comment">
+                            <span><img src="images/gostar.png">12</span>
+                            <span><img src="images/nao-gosta.png"></span>
+                            <span class="reply">Reply</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="comment">
+                    <img src="images/simon.png" class="icon-comment-write">
+                    <div class="info-comment">
+                        <div class="name-comment">
+                            <a href="#">Simon</a>
+                            <span>1 weeks ago</span>
+                        </div>
+                        <div class="text-comment">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam voluptatibus nisi perspiciatis nihil magni, quam tempora rerum, nobis delectus similique animi accusamus? Animi aliquam tempora voluptatibus optio eum necessitatibus accusantium.</p>
+                        </div>
+                        <div class="like-comment">
+                            <span><img src="images/gostar.png">5</span>
+                            <span><img src="images/nao-gosta.png"></span>
+                            <span class="reply">Reply</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="comment">
+                    <img src="images/tom.png" class="icon-comment-write">
+                    <div class="info-comment">
+                        <div class="name-comment">
+                            <a href="#">Tom</a>
+                            <span>10 months ago</span>
+                        </div>
+                        <div class="text-comment">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt explicabo repellat laborum iure quisquam corrupti excepturi repellendus deserunt sed temporibus qui odio perferendis, molestias, mollitia, esse similique numquam nesciunt optio!</p>
+                        </div>
+                        <div class="like-comment">
+                            <span><img src="images/gostar.png">2</span>
+                            <span><img src="images/nao-gosta.png"></span>
+                            <span class="reply">Reply</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-comment-small">
+        </div>
+
+        <div class="video-list">
+            <div class="video-item-list">
+                <img src="images/thumbnail1.png">
+                <div class="video-info-list">
+                    <a href="#" class="title-video-list">Titulo do video</a>
+                    <a href="#" class="channel-name-list">Kevin</a>
+
+                    <span>437k Views &bull; 14 hours ago</span>
+                    <span class="new">New</span>
+                </div>
+            </div>
+            <div class="video-item-list">
+                <img src="images/thumbnail2.png">
+                <div class="video-info-list">
+                    <a href="#" class="title-video-list">Titulo do video</a>
+                    <a href="#" class="channel-name-list">Kevin</a>
+
+                    <span>437k Views &bull; 14 hours ago</span>
+                    <span class="new">New</span>
+                </div>
+            </div>
+            <div class="video-item-list">
+                <img src="images/thumbnail3.png">
+                <div class="video-info-list">
+                    <a href="#" class="title-video-list">Titulo do video</a>
+                    <a href="#" class="channel-name-list">Kevin</a>
+
+                    <span>437k Views &bull; 14 hours ago</span>
+                </div>
+            </div>
+            <div class="video-item-list">
+                <img src="images/thumbnail4.png">
+                <div class="video-info-list">
+                    <a href="#" class="title-video-list">Titulo do video</a>
+                    <a href="#" class="channel-name-list">Kevin</a>
+
+                    <span>437k Views &bull; 14 hours ago</span>
+                </div>
+            </div>
+            <div class="video-item-list">
+                <img src="images/thumbnail5.png">
+                <div class="video-info-list">
+                    <a href="#" class="title-video-list">Titulo do video</a>
+                    <a href="#" class="channel-name-list">Kevin</a>
+
+                    <span>437k Views &bull; 14 hours ago</span>
+                </div>
+            </div>
+            <div class="video-item-list">
+                <img src="images/thumbnail6.png">
+                <div class="video-info-list">
+                    <a href="#" class="title-video-list">Titulo do video</a>
+                    <a href="#" class="channel-name-list">Kevin</a>
+
+                    <span>437k Views &bull; 14 hours ago</span>
+                </div>
+            </div>
+            <div class="video-item-list">
+                <img src="images/thumbnail7.png">
+                <div class="video-info-list">
+                    <a href="#" class="title-video-list">Titulo do video</a>
+                    <a href="#" class="channel-name-list">Kevin</a>
+
+                    <span>437k Views &bull; 14 hours ago</span>
+                </div>
+            </div>
+            <div class="video-item-list">
+                <img src="images/thumbnail8.png">
+                <div class="video-info-list">
+                    <a href="#" class="title-video-list">Titulo do video</a>
+                    <a href="#" class="channel-name-list">Kevin</a>
+
+                    <span>437k Views &bull; 14 hours ago</span>
+                </div>
+            </div>
+            <div class="video-item-list">
+                <img src="images/thumbnail1.png">
+                <div class="video-info-list">
+                    <a href="#" class="title-video-list">Titulo do video</a>
+                    <a href="#" class="channel-name-list">Kevin</a>
+
+                    <span>437k Views &bull; 14 hours ago</span>
+                    <span class="new">New</span>
+                </div>
+            </div>
+            <div class="video-item-list">
+                <img src="images/thumbnail2.png">
+                <div class="video-info-list">
+                    <a href="#" class="title-video-list">Titulo do video</a>
+                    <a href="#" class="channel-name-list">Kevin</a>
+
+                    <span>437k Views &bull; 14 hours ago</span>
+                    <span class="new">New</span>
+                </div>
+            </div>
+            <div class="video-item-list">
+                <img src="images/thumbnail3.png">
+                <div class="video-info-list">
+                    <a href="#" class="title-video-list">Titulo do video</a>
+                    <a href="#" class="channel-name-list">Kevin</a>
+
+                    <span>437k Views &bull; 14 hours ago</span>
+                </div>
+            </div>
+            <div class="video-item-list">
+                <img src="images/thumbnail4.png">
+                <div class="video-info-list">
+                    <a href="#" class="title-video-list">Titulo do video</a>
+                    <a href="#" class="channel-name-list">Kevin</a>
+
+                    <span>437k Views &bull; 14 hours ago</span>
+                </div>
+            </div>
+            <div class="video-item-list">
+                <img src="images/thumbnail5.png">
+                <div class="video-info-list">
+                    <a href="#" class="title-video-list">Titulo do video</a>
+                    <a href="#" class="channel-name-list">Kevin</a>
+
+                    <span>437k Views &bull; 14 hours ago</span>
+                </div>
+            </div>
+            <div class="video-item-list">
+                <img src="images/thumbnail6.png">
+                <div class="video-info-list">
+                    <a href="#" class="title-video-list">Titulo do video</a>
+                    <a href="#" class="channel-name-list">Kevin</a>
+
+                    <span>437k Views &bull; 14 hours ago</span>
+                </div>
+            </div>
+            <div class="video-item-list">
+                <img src="images/thumbnail7.png">
+                <div class="video-info-list">
+                    <a href="#" class="title-video-list">Titulo do video</a>
+                    <a href="#" class="channel-name-list">Kevin</a>
+
+                    <span>437k Views &bull; 14 hours ago</span>
+                </div>
+            </div>
+            <div class="video-item-list">
+                <img src="images/thumbnail8.png">
+                <div class="video-info-list">
+                    <a href="#" class="title-video-list">Titulo do video</a>
+                    <a href="#" class="channel-name-list">Kevin</a>
+
+                    <span>437k Views &bull; 14 hours ago</span>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
